@@ -28,17 +28,22 @@ class MyApp extends StatelessWidget {
 class MyAppState extends ChangeNotifier {
   var current = WordPair.random();
   var favorites = <WordPair>[];
+  var history = <WordPair>[];
+  GlobalKey? historyListKey;
 
   void getNext() {
+    history.insert(0, current);
+    var animatedList = historyListKey?.currentState as AnimatedListState;
+    animatedList.insertItem(0);
     current = WordPair.random();
     notifyListeners();
   }
 
-  void toggleFavorite() {
-    if (favorites.contains(current)) {
-      favorites.remove(current);
+  void toggleFavorite(pair) {
+    if (favorites.contains(pair)) {
+      favorites.remove(pair);
     } else {
-      favorites.add(current);
+      favorites.add(pair);
     }
 
     notifyListeners();
@@ -72,6 +77,14 @@ class _MyHomePageState extends State<MyHomePage> {
         throw UnimplementedError("no widget for $selectedIndex"); 
     }
 
+    var mainArea = Container(
+      color: Theme.of(context).colorScheme.primaryContainer,
+      child: AnimatedSwitcher(
+        duration: const Duration(milliseconds: 200),
+        child: page,
+      ),
+    );
+
     return LayoutBuilder(
       builder: (contex, constraints) {
         return Scaffold(
@@ -94,10 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
             ),
-            Expanded(
-                child: Container(
-                    color: Theme.of(context).colorScheme.primaryContainer,
-                    child: page))
+            Expanded(child: mainArea)
           ],
         ));
       }
@@ -115,6 +125,7 @@ class GeneratorPage extends StatelessWidget {
 
     return Center(
       child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        const Expanded(flex: 2, child: HistoryListView()),
         BigCard(pair: pair),
         const SizedBox(height: 10),
         Row(
@@ -122,7 +133,8 @@ class GeneratorPage extends StatelessWidget {
           children: [
             ElevatedButton.icon(
               onPressed: () {
-                appState.toggleFavorite();
+                appState.toggleFavorite(pair);
+                appState.getNext();
               },
               icon: Icon(icon),
               label: const Text('Like'),
@@ -134,7 +146,8 @@ class GeneratorPage extends StatelessWidget {
                 },
                 child: const Text('Next')),
           ],
-        )
+        ),
+        const Spacer(flex: 2)
       ]),
     );
   }
@@ -159,8 +172,10 @@ class BigCard extends StatelessWidget {
       color: theme.colorScheme.primary,
       child: Padding(
         padding: const EdgeInsets.all(20.0),
-        child: Text(pair.asLowerCase,
-            style: style, semanticsLabel: "${pair.first} ${pair.second}"),
+        child: Wrap(children: [
+          Text(pair.first, style: style.copyWith(fontWeight: FontWeight.w200)),
+          Text(pair.second, style: style.copyWith(fontWeight: FontWeight.w400))
+          ]),
       ),
     );
   }
@@ -190,3 +205,45 @@ class FavoritesPage extends StatelessWidget {
   }
 
 } 
+
+class HistoryListView extends StatefulWidget {
+  const HistoryListView({Key? key}) : super(key: key);
+
+  @override
+  State<HistoryListView> createState() => _HistoryListViewState();
+}
+
+class _HistoryListViewState extends State<HistoryListView> {
+    final _key = GlobalKey();
+
+    static const Gradient _maskingGradient = LinearGradient(
+      colors: [Colors.transparent, Colors.black],
+      stops: [0.0, 0.5],
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+    );
+
+  @override
+  Widget build(BuildContext context) {
+    final appState = context.watch<MyAppState>();
+    appState.historyListKey = _key;
+
+    return ShaderMask(
+      shaderCallback: (bounds) => _maskingGradient.createShader(bounds),
+      blendMode: BlendMode.dstIn,
+      child: AnimatedList(
+        key: _key,
+        reverse: true,
+        padding: EdgeInsets.only(top: 100),
+        initialItemCount: appState.history.length,
+        itemBuilder: (context, index, animation) {
+          final pair = appState.history[index];
+          return SizeTransition(
+            sizeFactor: animation,
+            child: Center(child: 
+            TextButton.icon(onPressed: () => appState.toggleFavorite(pair), icon: appState.favorites.contains(pair) ? Icon(Icons.favorite, size:12) : SizedBox(), label: Text(pair.asLowerCase))));
+        },
+        
+      ));
+  }
+}
