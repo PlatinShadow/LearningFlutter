@@ -1,7 +1,9 @@
 FROM ubuntu:latest
 
+# Install deps
 RUN apt update && apt install -y curl git unzip xz-utils zip libglu1-mesa openjdk-8-jdk wget clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev
 
+# Setup user
 RUN useradd -ms /bin/bash dev
 WORKDIR /home/dev
 
@@ -19,9 +21,20 @@ WORKDIR /home/dev
 #ENV PATH "$PATH:/home/developer/Android/sdk/platform-tools"
 
 
+# Setup Flutter dev tools
 RUN git clone https://github.com/flutter/flutter.git /opt/flutter
-run chown -R dev /opt/flutter
+RUN chown -R dev /opt/flutter
 ENV PATH "$PATH:/opt/flutter/bin"
+
+# Install firebase cli
+RUN mkdir /opt/firebase
+RUN wget https://firebase.tools/bin/linux/latest -O /opt/firebase/firebase
+RUN chown dev /opt/firebase/firebase
+RUN chmod +x /opt/firebase/firebase
+ENV PATH "$PATH:/opt/firebase"
 
 USER dev
 RUN flutter doctor
+
+ENV PATH "$PATH:/home/dev/.pub-cache/bin"
+RUN dart pub global activate flutterfire_cli

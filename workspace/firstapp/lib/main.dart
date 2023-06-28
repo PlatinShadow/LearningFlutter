@@ -3,7 +3,7 @@ import 'package:english_words/english_words.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         ),
-        home: MyHomePage(),
+        home: const MyHomePage(),
       ),
     );
   }
@@ -50,6 +50,8 @@ class MyAppState extends ChangeNotifier {
 }
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
@@ -63,10 +65,10 @@ class _MyHomePageState extends State<MyHomePage> {
     Widget page;
     switch(selectedIndex) {
       case 0: 
-        page = GeneratorPage(); 
+        page = const GeneratorPage(); 
         break;
       case 1:
-       page = FavoritesPage(); 
+       page = const FavoritesPage(); 
        break;
       default: 
         throw UnimplementedError("no widget for $selectedIndex"); 
@@ -106,6 +108,8 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class GeneratorPage extends StatelessWidget {
+  const GeneratorPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     var appState = context.watch<MyAppState>();
@@ -167,6 +171,8 @@ class BigCard extends StatelessWidget {
 }
 
 class FavoritesPage extends StatelessWidget {
+  const FavoritesPage({super.key});
+
   
   @override
   Widget build(BuildContext context) {
@@ -182,7 +188,7 @@ class FavoritesPage extends StatelessWidget {
         child: Text('You have ${appState.favorites.length} favorites: ')),
 
         for (var pair in appState.favorites)
-          ListTile(leading: Icon(Icons.favorite), title: Text(pair.asLowerCase))
+          ListTile(leading: const Icon(Icons.favorite), title: Text(pair.asLowerCase))
 
       ],
     );

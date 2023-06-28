@@ -1,0 +1,403 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "intermediates_do_not_run/firstapp"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"target_link_libraries",
+			"include",
+			"add_dependencies",
+			"target_compile_options",
+			"apply_standard_settings",
+			"add_definitions"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"flutter/generated_plugins.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 111,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 92,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 71,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 57,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-pthread"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "APPLICATION_ID=\"com.example.firstapp\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "HAVE_LIBHANDY"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/home/dev/workspace/firstapp/linux/flutter/ephemeral"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/dev/workspace/firstapp/linux/flutter/ephemeral/.plugin_symlinks/handy_window/linux/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/dev/workspace/firstapp/linux/flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/build/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/dev/workspace/firstapp/linux/flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/gtk-3.0"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/at-spi2-atk/2.0"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/at-spi-2.0"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/dbus-1.0"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/lib/x86_64-linux-gnu/dbus-1.0/include"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/gio-unix-2.0"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/cairo"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/pango-1.0"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/harfbuzz"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/fribidi"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/atk-1.0"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/pixman-1"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/uuid"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/freetype2"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/gdk-pixbuf-2.0"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/libpng16"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/libmount"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/blkid"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/include/glib-2.0"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "/usr/lib/x86_64-linux-gnu/glib-2.0/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "handy::@bb871cfc9a5aca2ce65d"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "handy_window_plugin::@af487d47b76ff44ee67f"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "flutter_assemble::@2bb09fbb03a373b2cb34"
+		}
+	],
+	"id" : "firstapp::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "/home/dev/workspace/build/bundle"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/home/dev/workspace/build/bundle"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/dev/workspace/build/plugins/handy_window:/home/dev/workspace/firstapp/linux/flutter/ephemeral:/home/dev/workspace/build/plugins/handy_window/libhandy:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "plugins/handy_window/libhandy_window_plugin.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/dev/workspace/firstapp/linux/flutter/ephemeral/libflutter_linux_gtk.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgtk-3.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgdk-3.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libpango-1.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libharfbuzz.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libatk-1.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libcairo-gobject.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libcairo.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgio-2.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgobject-2.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libglib-2.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "plugins/handy_window/libhandy/libhandy_flutter.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "firstapp",
+	"nameOnDisk" : "firstapp",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "main.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "my_application.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/generated_plugin_registrant.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

@@ -1,0 +1,778 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "plugins/handy_window/libhandy/libhandy_flutter.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_definitions",
+			"target_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 90,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 57,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 72,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fPIC"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-pthread"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "APPLICATION_ID=\"com.example.firstapp\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "HANDY_COMPILATION"
+				},
+				{
+					"define" : "handy_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/home/dev/workspace/firstapp/linux/flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/build/src"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/dev/workspace/firstapp/linux/flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/dev/workspace/firstapp/linux/flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/build"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/gtk-3.0"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/at-spi2-atk/2.0"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/at-spi-2.0"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/dbus-1.0"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/lib/x86_64-linux-gnu/dbus-1.0/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/gio-unix-2.0"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/cairo"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/pango-1.0"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/harfbuzz"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/fribidi"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/atk-1.0"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/pixman-1"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/uuid"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/freetype2"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/gdk-pixbuf-2.0"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/libpng16"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/libmount"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/blkid"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/glib-2.0"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/lib/x86_64-linux-gnu/glib-2.0/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59
+			]
+		}
+	],
+	"id" : "handy::@bb871cfc9a5aca2ce65d",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgtk-3.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgdk-3.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libpango-1.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libharfbuzz.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libatk-1.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libcairo-gobject.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libcairo.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgio-2.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgobject-2.0.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libglib-2.0.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "handy",
+	"nameOnDisk" : "libhandy_flutter.so",
+	"paths" : 
+	{
+		"build" : "plugins/handy_window/libhandy",
+		"source" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/build/src/hdy-enums-private.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/build/src/hdy-enums.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/build/src/hdy-public-types.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/build/src/hdy-resources.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/gtkprogresstracker.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/gtk-window.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-action-row.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-animation.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-application-window.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-avatar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-avatar-icon.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-bidi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-carousel-box.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-carousel.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-carousel-indicator-dots.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-carousel-indicator-lines.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-clamp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-combo-row.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-css.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-deck.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-enum-value-object.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-expander-row.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-fading-label.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-flap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-header-bar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-header-group.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-keypad-button.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-keypad.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-leaflet.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-navigation-direction.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-nothing.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-preferences-group.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-preferences-page.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-preferences-row.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-preferences-window.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-search-bar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-settings.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-shadow-helper.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-squeezer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-stackable-box.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-status-page.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-style-manager.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-swipeable.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-swipe-group.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-swipe-tracker.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-tab-bar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-tab-box.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-tab.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-tab-view.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-title-bar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-value-object.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-view-switcher-bar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-view-switcher-button.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-view-switcher.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-view-switcher-title.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-window.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-window-handle.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-window-handle-controller.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flutter/ephemeral/.plugin_symlinks/handy_window/linux/libhandy/src/src/hdy-window-mixin.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}
